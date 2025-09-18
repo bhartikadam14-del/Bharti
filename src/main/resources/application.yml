@@ -1,14 +1,18 @@
+
 server:
-  port: 8083
+  port: 8081
 spring:
   application:
     name: Home
   datasource:
-    url: jdbc:mysql://localhost:3306/spr240
-    username: root
-    password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:postgresql://dpg-d360b97diees738n4bp0-a.oregon-postgres.render.com:5432/user_ybik
+    username: user_ybik_user
+    password: Kr9Yr1UigcmrVBJXo05FonFyMKbgrgFL
+    driver-class-name: org.postgresql.Driver
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
+eureka:
+  instance:
+    hostname: localhost
